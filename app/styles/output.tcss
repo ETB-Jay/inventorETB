@@ -1,0 +1,9 @@
+/* Output and Display Styles */
+
+#query-output {
+    width: 100%;
+    height: 8;
+    border: solid $success;
+    background: $surface-darken-2;
+    color: $success;
+}

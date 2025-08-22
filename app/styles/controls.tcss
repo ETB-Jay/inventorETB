@@ -1,0 +1,20 @@
+/* Button and Control Styles */
+
+#controls { 
+    width: 100%; 
+    align-horizontal: center;
+}
+
+#generate-btn, #clear-btn, #samples-btn { 
+    width: auto; 
+    min-width: 20;
+    background: $success;
+    color: $text;
+    text-style: bold;
+    border: none;
+    height: 2;
+}
+
+#generate-btn:hover, #clear-btn:hover, #samples-btn:hover {
+    background: $success-lighten-1;
+}
