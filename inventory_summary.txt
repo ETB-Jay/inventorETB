@@ -1,0 +1,21 @@
+CSV INVENTORY SUMMARY REPORT
+==================================================
+
+📊 BASIC INVENTORY STATISTICS
+------------------------------
+Total number of products: 1373404
+Total ending inventory units: 4,180,039
+Total ending inventory retail value: $4,862,664.55
+
+⚠️  ZERO INVENTORY PRODUCTS
+------------------------------
+Products with zero inventory: 1044845
+
+📈 INVENTORY VALUE RANGES
+------------------------------
+Range 0.8 - 0.8 (New Arrivals):
+  • Total Units: 2,338
+  • Total Value: $1,870.40
+  • Number of Products: 988
+  • Average Item Value: $0.80
+

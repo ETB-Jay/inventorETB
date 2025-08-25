@@ -1,2 +1,1 @@
-textual>=0.41.0
-pyperclip>=1.8.2
+pandas>=2.2.3
