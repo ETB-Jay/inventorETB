@@ -8,7 +8,14 @@ To set correctly:
 
 Example: CSV_FILE_PATH = r"C:\\Users\\username\\Desktop\\inventorETB\\inventory-totals.csv"
 """
-CSV_FILE_PATH: str = "" # HERE
+CSV_FILE_PATH: str = r"C:\Users\kalem\OneDrive\Desktop\inventorETB\inventory-totals.csv"
+
+"""
+OUTPUT_PATH: str
+
+Absolute/relative path to the output path. 
+"""
+OUTPUT_PATH: str = r"data/"
 
 """
 RANGES: list[dict]
@@ -36,7 +43,12 @@ RANGES: list = [
         "max": 0.8,
         "collection": [
             "New Arrivals"
-            
         ]
-    },
+    }, {
+        "min": 10,
+        "collection": [
+            "MTG Singles - Instock",
+            "New Arrivals"   
+        ]
+    }
 ] 
