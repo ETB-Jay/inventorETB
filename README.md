@@ -33,17 +33,14 @@ pip install -r requirements.txt
 
 ### Exporting Data from Shopify
 
-4. Copy the following ShopifyQL query into the ShopifyQL Editor. The same code can be found under the `inventory-totals` in **Reports**
+4. Copy the following ShopifyQL query into the ShopifyQL Editor. The same code can be found under the `inventory-totals` in **Reports** (this will take a while)
 ```sql
 FROM inventory
-  SHOW ending_inventory_units, ending_inventory_retail_value
-  GROUP BY product_title, product_variant_id, product_variant_title WITH TOTALS,
-    GROUP_TOTALS, CURRENCY 'CAD'
+  SHOW ending_inventory_units, ending_inventory_retail_value, product_collection
+  GROUP BY product_title, product_variant_id, product_variant_title,
+    product_collection WITH TOTALS, GROUP_TOTALS, CURRENCY 'CAD'
   DURING today
-  ORDER BY ending_inventory_units__product_title_totals DESC,
-    ending_inventory_units__product_title_product_variant_id_totals DESC,
-    ending_inventory_units DESC, product_title ASC, product_variant_id ASC,
-    product_variant_title ASC
+  ORDER BY product_variant_id ASC
   LIMIT 1000
 ```
 
@@ -76,3 +73,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 # 📄 | License
 This project is licensed under the MIT License – see the LICENSE file for details.
+
