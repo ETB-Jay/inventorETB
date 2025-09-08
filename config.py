@@ -8,7 +8,7 @@ To set correctly:
 
 Example: CSV_FILE_PATH = r"C:\\Users\\username\\Desktop\\inventorETB\\inventory-totals.csv"
 """
-CSV_FILE_PATH: str = r"C:\Users\kalem\OneDrive\Desktop\inventorETB\inventory-totals.csv"
+CSV_FILE_PATH: str = r"C:\Users\kalem\OneDrive\Desktop\ETB\inventorETB\inventory-totals.csv"
 
 """
 OUTPUT_PATH: str
@@ -51,36 +51,40 @@ Example:
 """
 RANGES = [
     # ==== MTG Singles ====
-    {"name": "MTG Singles - Under $0.50", "max": 0.49, "collection": ["MTG Singles"]},
-    {"name": "MTG Singles - $0.51 to $3.00", "min": 0.5, "max": 2.99, "collection": ["MTG Singles"]},
+    {"name": "MTG Singles - Under and Including $0.50", "max": 0.5, "collection": ["MTG Singles"]},
+    {"name": "MTG Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["MTG Singles"]},
     {"name": "MTG Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["MTG Singles"]},
     {"name": "MTG Singles - Over $10.00", "min": 10, "collection": ["MTG Singles"]},
     # ==== Pokemon Singles ====
-    {"name": "Pokémon Singles - Under $0.50", "max": 0.49, "collection": ["Pokémon Singles"]},
+    {"name": "Pokémon Singles - Under and Including $0.50", "max": 0.5, "collection": ["Pokémon Singles"]},
     {"name": "Pokémon Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Pokémon Singles"]},
     {"name": "Pokémon Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Pokémon Singles"]},
     {"name": "Pokémon Singles - Over $10.00", "min": 10, "collection": ["Pokémon Singles"]},
     # ==== YuGiOh Singles ====
-    {"name": "Yugioh Singles - Under $0.50", "max": 0.49, "collection": ["Yugioh Singles"]},
+    {"name": "Yugioh Singles - Under and Including $0.50", "max": 0.5, "collection": ["Yugioh Singles"]},
     {"name": "Yugioh Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Yugioh Singles"]},
     {"name": "Yugioh Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Yugioh Singles"]},
     {"name": "Yugioh Singles - Over $10.00", "min": 10, "collection": ["Yugioh Singles"]},
-    # ==== Warhammer ====
-    {"name": "Warhammer - Under $0.50", "max": 0.49, "collection": ["Warhammer"]},
-    {"name": "Warhammer - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Warhammer"]},
-    {"name": "Warhammer - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Warhammer"]},
-    {"name": "Warhammer - Over $10.00", "min": 10, "collection": ["Warhammer"]},
     # ==== One Piece ====
-    {"name": "One Piece Singles - Under $0.50", "max": 0.49, "collection": ["One Piece Singles"]},
+    {"name": "One Piece Singles - Under and Including $0.50", "max": 0.5, "collection": ["One Piece Singles"]},
     {"name": "One Piece Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["One Piece Singles"]},
     {"name": "One Piece Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["One Piece Singles"]},
     {"name": "One Piece Singles - Over $10.00", "min": 10, "collection": ["One Piece Singles"]},
     # ==== Lorcana Singles ====
-    {"name": "Lorcana Singles - Under $0.50", "max": 0.49, "collection": ["Lorcana Singles"]},
+    {"name": "Lorcana Singles - Under and Including $0.50", "max": 0.5, "collection": ["Lorcana Singles"]},
     {"name": "Lorcana Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Lorcana Singles"]},
     {"name": "Lorcana Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Lorcana Singles"]},
     {"name": "Lorcana Singles - Over $10.00", "min": 10, "collection": ["Lorcana Singles"]},
-    
+    # === Sorcery ===
+    {"name": "Sorcery Singles - Under and Including $0.50", "max": 0.5, "collection": ["Sorcery Singles"]},
+    {"name": "Sorcery Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Sorcery Singles"]},
+    {"name": "Sorcery Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Sorcery Singles"]},
+    {"name": "Sorcery Singles - Over $10.00", "min": 10, "collection": ["Sorcery Singles"]},
+    # === Flesh and Blood
+    {"name": "Flesh and Blood Singles - Under and Including $0.50", "max": 0.5, "collection": ["Flesh and Blood Singles"]},
+    {"name": "Flesh and Blood Singles - $0.51 to $3.00", "min": 0.51, "max": 2.99, "collection": ["Flesh and Blood Singles"]},
+    {"name": "Flesh and Blood Singles - $3.01 to $10.00", "min": 3, "max": 9.99, "collection": ["Flesh and Blood Singles"]},
+    {"name": "Flesh and Blood Singles - Over $10.00", "min": 10, "collection": ["Flesh and Blood Singles"]},
     # ==== Shipping ====
     {"name": "Shipping Products", "variant_ids": [42277454676139, 45167013494955, 42172855943339, 45250620489899, 44728401166507, 43398104285355, 45341396631723, 43014307053739]},
     # ==== MTG Packs ====
